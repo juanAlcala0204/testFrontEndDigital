@@ -5,47 +5,29 @@ import 'react-tabulator/lib/styles.css'; // required styles
 import 'react-tabulator/lib/css/bootstrap/tabulator_bootstrap.min.css';
 import { ReactTabulator } from 'react-tabulator'
 
-export default function List({service}) {
+export default function List({data}) {
 
-    const [dataTabulator, setDataTabulator] = useState([]);
-
-    const getData = async () => {
-        setDataTabulator(await service.getUsers());
-    }
+    const [dataTabulator, setDataTabulator] = useState(data);
 
     useEffect(() => {
-        getData();
-    }, [])
+        setDataTabulator(data);
+    }, [data])
 
     const columns = [
         {
-            title: "ID",
-            field: "id",
-            minWidth: 60,
+            title: "Título",
+            field: "title",
             headerFilter:"input"
         },
         {
-            title: "Username",
-            field: "username",
-            minWidth: 178,
-            headerFilter:"input"
-        },
-        {
-            title: "Nombre",
-            field: "name",
-            minWidth: 178,
-            headerFilter:"input"
-        },
-        {
-            title: "Telefono",
-            field: "phone",
-            minWidth: 178,
+            title: "Descripción",
+            field: "description",
             headerFilter:"input"
         }
     ]
 
     return (
-        <div id='tblUsers'>
+        <div>
             <ReactTabulator 
                 columns={columns}
                 layout={"fitColumns"}

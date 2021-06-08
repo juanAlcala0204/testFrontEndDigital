@@ -11,15 +11,15 @@ export default function Home() {
         <BasicCard>
             <div className='row'>
                 <div className='col-md-12 cardImageHome'>
-                    <CardImage />
+                    <CardImage urlImage='https://via.placeholder.com/728x150.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide%20C/O%20https://placeholder.com/'/>
                 </div>
             </div>
             <div className='row'>
                 <div className='col-md-6 cardImageHome'>
-                    <CardImage />
+                    <CardImage urlImage='https://via.placeholder.com/228x150.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide%20C/O%20https://placeholder.com/'/>
                 </div>
                 <div className='col-md-6 cardImageHome'>
-                    <CardImage />
+                    <CardImage  urlImage='https://via.placeholder.com/228x150.png?text=Visit+WhoIsHostingThis.com+Buyers+Guide%20C/O%20https://placeholder.com/'/>
                 </div>
             </div>
         </BasicCard>

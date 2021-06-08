@@ -13,10 +13,10 @@ const CardImage = ({ type = "Basic", urlImage, styles, options = {}, data }) => 
                     case "Basic":
                         return (
                             <div>
-                                <div className="card" style={{ ...styles }}>
-                                    <img src="" className="card-img-top" alt="..." />
+                                <div className="card" id="blockImage" style={{ ...styles }}>
+                                    <img src={`${urlImage}`} className="card-img-top" alt="..." />
                                     <div className="card-body">
-                                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p className="card-text">This is a example image that we can have in the test, have differents heigth and width.</p>
                                     </div>
                                 </div>
                             </div>

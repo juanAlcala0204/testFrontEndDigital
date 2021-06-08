@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <nav id="sidebar">
       <div className="sidebar-header">
-        <h3 className="text-center">Payroll App</h3>
+        <h3 className="text-center">Test</h3>
       </div>
 
       <ul className="list-unstyled components">
@@ -20,7 +20,7 @@ const Sidebar = () => {
             aria-expanded="true"
             className="dropdown-toggle"
           >
-            Modulos
+            Módulos
           </a>
           <ul className="collapsed list-unstyled" id="homePeopleMenu">
             <li>

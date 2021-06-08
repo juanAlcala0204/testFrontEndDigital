@@ -1,3 +1,11 @@
 .navbarPosts {
     text-align: center;
 }
+
+.errorField {
+    color: red;
+}
+
+.blockPost {
+    margin-top: 20px;
+}

@@ -16,27 +16,10 @@ export default function Albums() {
 
     const nextGroup = () => {
         let newDataFiltered = [];
-        let tempPosition = initialPosition;
-        if (tempPosition > dataAlbum.length) {
-            console.log(tempPosition);
-            
-            setInitialPosition(0);
-            newDataFiltered = [dataAlbum[0], dataAlbum[1], dataAlbum[2]];
-        } else if ((tempPosition + 1) > dataAlbum.length) {
-            console.log(tempPosition);
-            setInitialPosition(0);
-            newDataFiltered = [dataAlbum[tempPosition]];
-        } else if ((tempPosition + 2) > dataAlbum.length) {
-            console.log(tempPosition);
-            setInitialPosition(0);
-            newDataFiltered = [dataAlbum[tempPosition], dataAlbum[tempPosition + 1]];
-        } else {
-        tempPosition = initialPosition + 3;
+        let tempPosition = initialPosition + 3;
         setInitialPosition(initialPosition + 3);
-            newDataFiltered = [dataAlbum[tempPosition], dataAlbum[tempPosition + 1], dataAlbum[tempPosition + 2]];
-        }
-            console.log(tempPosition);
-            setDataFiltered(newDataFiltered);
+        newDataFiltered = [dataAlbum[tempPosition], dataAlbum[tempPosition + 1], dataAlbum[tempPosition + 2]];
+        setDataFiltered(newDataFiltered);
     }
 
     const lastGroup = () => {
@@ -45,7 +28,6 @@ export default function Albums() {
             let tempPosition = initialPosition - 3;
             setInitialPosition(initialPosition - 3);
             newDataFiltered = [dataAlbum[tempPosition], dataAlbum[tempPosition + 1], dataAlbum[tempPosition + 2]];
-            console.log(newDataFiltered);
             setDataFiltered(newDataFiltered);
         }
 
