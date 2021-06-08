@@ -17,6 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `yarn test`
 
+REMEBER BEFORE TO EXECUTE THE TEST, YOU NEED HAVE EXECUTING THE YARN START. YOU NEED RUN THE PROJECT BEFORE TO EXECUTE THE TESTS
 Launches the test runner (test created with cypress).\
 See the section about Test for more information.
 
