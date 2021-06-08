@@ -8,7 +8,7 @@ class User {
             console.log("Users", listUsers);
             return listUsers;
         } catch (error) {
-            console.log("Ha ocurrido un error"+error);
+            console.log("Ha ocurrido un error");
         }
     }
 }

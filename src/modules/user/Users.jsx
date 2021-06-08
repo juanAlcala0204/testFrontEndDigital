@@ -19,7 +19,7 @@ export default function Users() {
                         <nav className="navbar navbar-light bg-light navbarUser">
                             <div className='col'></div>
                             <div className='col'>
-                                <a className="navbar-brand" href="#">Usuarios</a>
+                                <a className="navbar-brand" >Usuarios</a>
                             </div>
                             <div className='col'></div>
                         </nav>

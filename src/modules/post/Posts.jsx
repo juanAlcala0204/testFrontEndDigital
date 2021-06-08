@@ -13,7 +13,7 @@ export default function Posts() {
                         <nav className="navbar navbar-light bg-light navbarAlbums">
                             <div className='col'></div>
                             <div className='col'>
-                                <a className="navbar-brand" href="#">Publicaciones</a>
+                                <a className="navbar-brand">Publicaciones</a>
                             </div>
                             <div className='col'></div>
                         </nav>
