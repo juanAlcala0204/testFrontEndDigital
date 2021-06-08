@@ -20,17 +20,27 @@ const Sidebar = () => {
             aria-expanded="true"
             className="dropdown-toggle"
           >
-            Administration
+            Modulos
           </a>
           <ul className="collapsed list-unstyled" id="homePeopleMenu">
             <li>
-              <NavLink exact to="/People">
-                People
+              <NavLink exact to="/">
+                Home
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/Company">
-                Companies
+              <NavLink exact to="/Users">
+                Usuarios
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/Albums">
+                Albumes
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/Posts">
+                Publicaciones
               </NavLink>
             </li>
           </ul>

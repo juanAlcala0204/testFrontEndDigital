@@ -4,7 +4,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 /** Import Components */
 import {
-  Home
+  Home,
+  Albums,
+  Posts,
+  Users
 } from '../modules/index'
 
 import Main from '../layouts/Main'
@@ -14,8 +17,11 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Main>
-          <Route path="/" component={Home}></Route>
+          <Route exact path="/" component={Home}></Route>
           <Route exact strict path={["/(.+)"]}>
+            <Route path="/Users" component={Users}></Route>
+            <Route path="/Albums" component={Albums}></Route>
+            <Route path="/Posts" component={Posts}></Route>
           </Route>
         </Main>
       </Switch>

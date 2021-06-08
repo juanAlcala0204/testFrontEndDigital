@@ -4,7 +4,7 @@ import CardImage from '../../components/CardImage'
 
 import '../../assets/css/Home/home.css'
 
-export default function home() {
+export default function Home() {
 
     return (
         <div className='card'>
