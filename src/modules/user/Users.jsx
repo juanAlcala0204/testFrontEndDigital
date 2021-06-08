@@ -10,10 +10,10 @@ export default function Users() {
             <BasicCard>
                 <div className='row'>
                     <div className='col'>
-                        <nav class="navbar navbar-light bg-light navbarUser">
+                        <nav className="navbar navbar-light bg-light navbarUser">
                             <div className='col'></div>
                             <div className='col'>
-                                <a class="navbar-brand" href="#">Usuarios</a>
+                                <a className="navbar-brand" href="#">Usuarios</a>
                             </div>
                             <div className='col'></div>
                         </nav>
